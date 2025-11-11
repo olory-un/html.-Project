@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon formulaire</title>
+  <link href="liens.css/styles formulaire.css" rel="stylesheet">
+  
+</head>
+<body>
+  <!-- En-tête -->
+  <div class="entete">
+    <a href="https://enseignementsuperieur.gouv.bj/" target="_blank">
+      <img src="photo ministère.webp" alt="Ministère du Bénin" title="Ministère du Bénin">
+    </a>
+    <h2>BIENVENUE DANS MON SITE WEB</h2>
+    <a href="https://pigier-benin.com/" target="_blank">
+      <img src="pigier.webp" alt="Pigier" title="Page Pigier">
+    </a>
+  </div>
+
+  <!-- Formulaire principal -->
+  <form method="post" action="traitement.php">
+    <h3>Formulaire d’inscription</h3>
+
+    <label for="nom">Votre nom :</label>
+    <input type="text" name="nom" id="nom" placeholder="Entrez votre nom" required>
+
+    <label for="prenom">Votre prénom :</label>
+    <input type="text" name="prenom" id="prenom" placeholder="Entrez votre prénom" required>
+
+    <label for="pseudo">Votre pseudo :</label>
+    <input type="text" name="pseudo" id="pseudo" placeholder="Entrez un pseudo">
+
+    <label for="mail">Votre email :</label>
+    <input type="email" name="mail" id="mail" placeholder="exemple@mail.com" required>
+
+    <label for="pass">Votre mot de passe :</label>
+    <input type="password" name="pass" id="pass" placeholder="••••••••" required>
+
+    
+    <h4>🎯 Votre tranche d’âge :</h4>
+    <div class="radio-group">
+      <div class="radio-item"><input type="radio" name="age" id="moins15" value="moins15"><label for="moins15">Moins de 15 ans</label></div>
+      <div class="radio-item"><input type="radio" name="age" id="15-25" value="15-25"><label for="15-25">15–25 ans</label></div>
+      <div class="radio-item"><input type="radio" name="age" id="25-40" value="25-40"><label for="25-40">25–40 ans</label></div>
+      <div class="radio-item"><input type="radio" name="age" id="plus40" value="plus40"><label for="plus40">Plus de 40 ans</label></div>
+    </div>
+
+    <h4>🌍 Dans quel pays habitez-vous ?</h4>
+    <select name="pays" required>
+      <optgroup label="Europe">
+        <option value="">-- Sélectionnez --</option>
+        <option value="france">France</option>
+        <option value="espagne">Espagne</option>
+        <option value="italie">Italie</option>
+        <option value="royaume-uni">Royaume-Uni</option>
+      </optgroup>
+      <optgroup label="Amérique">
+        <option value="canada">Canada</option>
+        <option value="etats-unis">États-Unis</option>
+      </optgroup>
+      <optgroup label="Asie">
+        <option value="chine">Chine</option>
+        <option value="japon">Japon</option>
+      </optgroup>
+       <optgroup label="Afrique">
+        <option value="Benin">Benin</option>
+        <option value="Congo">Congo</option>
+      </optgroup>
+    </select>
+
+    <fieldset>
+      <legend>📧 Vos coordonnées</legend>
+      <label for="email">Adresse e-mail :</label>
+      <input type="email" name="email" id="email" placeholder="exemple@domaine.com">
+    </fieldset>
+
+    <fieldset>
+      <legend>💭 Votre souhait</legend>
+      <div class="radio-group">
+        <div class="radio-item"><input type="radio" name="souhait" id="riche" value="riche"><label for="riche">Être riche</label></div>
+        <div class="radio-item"><input type="radio" name="souhait" id="celebre" value="celebre"><label for="celebre">Être célèbre</label></div>
+        <div class="radio-item"><input type="radio" name="souhait" id="intelligent" value="intelligent"><label for="intelligent">Être encore plus intelligent</label></div>
+        <div class="radio-item"><input type="radio" name="souhait" id="autre" value="autre"><label for="autre">Autre...</label></div>
+      </div>
+      <label for="precisions" style="margin-top: 12px;">Précisions :</label>
+      <textarea name="precisions" id="precisions" placeholder="Exprimez votre souhait ici..."></textarea>
+    </fieldset>
+
+    <div class="form-actions">
+      <button type="submit" class="btn btn-submit">Envoyer</button>
+      <button type="reset" class="btn btn-reset">Effacer</button>
+    </div>
+  </form>
+
+  <!-- Navigation -->
+  <div class="nav">
+    <a href="page1.html" class="nav-button">🏠 Accueil</a>
+    <a href="tableau.html" class="nav-button">← Retour à la page des tableaux</a>
+  </div>
+</body>
+</html>

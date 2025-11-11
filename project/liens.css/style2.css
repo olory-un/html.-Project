@@ -1,0 +1,92 @@
+ <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+      color: #1a1a1a;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: #1976d2;
+      text-align: center;
+      margin-bottom: 25px;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #6a1b9a; /* Violet */
+      margin: 25px 0 15px;
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 1.05rem;
+      color: #333;
+    }
+
+    strong {
+      color: #1976d2;
+      font-weight: 600;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      gap: 20px;
+    }
+
+    .nav-button {
+      flex: 1;
+      padding: 12px 20px;
+      background: linear-gradient(120deg, #1976d2, #6a1b9a);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+    }
+
+    .nav-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(25, 118, 210, 0.45);
+      background: linear-gradient(120deg, #1565c0, #5e178a);
+    }
+
+    @media (max-width: 600px) {
+      .nav-buttons {
+        flex-direction: column;
+      }
+      .container {
+        padding: 25px;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>

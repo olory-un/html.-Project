@@ -1,0 +1,148 @@
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+      color: #1a1a1a;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      color: #1976d2;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: #6a1b9a;
+      margin: 25px 0 15px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    /* Style général des tableaux */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px auto;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    table:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    }
+
+    td {
+      padding: 16px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.25s ease;
+      position: relative;
+    }
+
+    /* --- Tableau 1 : Jaune doux (RGL) --- */
+    .table-1 td {
+      background-color: #fff8e1;
+      color: #5d4037;
+    }
+
+    .table-1 td:hover {
+      background-color: #ffecb3;
+      transform: scale(1.03);
+    }
+
+    /* --- Tableau 2 : Bleu (RM) --- */
+    .table-2 td {
+      background-color: #e3f2fd;
+      color: #0d47a1;
+    }
+
+    .table-2 td:first-child {
+      background-color: #bbdefb;
+      color: #0d47a1;
+    }
+
+    .table-2 td:first-child i {
+      display: inline-block;
+      transform: rotate(60deg);
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    .table-2 td:hover {
+      background-color: #c5e1ff;
+      transform: scale(1.03);
+    }
+
+    /* --- Tableau 3 : Vert doux (ABC) --- */
+    .table-3 td {
+      background-color: #e8f5e9;
+      color: #1b5e20;
+    }
+
+    .table-3 td:hover {
+      background-color: #c8e6c9;
+      transform: scale(1.03);
+    }
+
+    /* Navigation */
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      gap: 20px;
+    }
+
+    .nav-button {
+      flex: 1;
+      padding: 12px 20px;
+      background: linear-gradient(120deg, #1976d2, #6a1b9a);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(25, 118, 210, 0.45);
+      background: linear-gradient(120deg, #1565c0, #5e178a);
+    }
+
+    @media (max-width: 600px) {
+      .nav-buttons {
+        flex-direction: column;
+      }
+      td {
+        padding: 12px 8px;
+        font-size: 1rem;
+      }
+    }
+  </style>

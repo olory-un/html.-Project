@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bienvenue — Mon site personnel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+      color: #1a1a1a;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* --- En-tête --- */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .header img {
+      height: 60px;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .header img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Bloc central (Bienvenue + Nom) */
+    .welcome-block {
+      text-align: center;
+      flex: 1;
+    }
+
+    .welcome-block h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #1976d2;
+      margin-bottom: 8px;
+    }
+
+    .welcome-block p {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #6a1b9a;
+      margin: 0;
+    }
+
+    /* Cartes */
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+    }
+
+    .card h1 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: #6a1b9a;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+    }
+
+    .card h1::before {
+      content: "•";
+      color: #1976d2;
+      font-size: 2rem;
+      margin-right: 10px;
+    }
+
+    .card p {
+      margin-bottom: 10px;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #1976d2;
+      float: right;
+      margin: 0 0 20px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ol {
+      padding-left: 20px;
+      margin: 15px 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    /* Navigation */
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      gap: 20px;
+    }
+
+    .nav-button {
+      flex: 1;
+      padding: 12px 20px;
+      background: linear-gradient(120deg, #1976d2, #6a1b9a);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .nav-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(25, 118, 210, 0.45);
+      background: linear-gradient(120deg, #1565c0, #5e178a);
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .welcome-block {
+        margin: 15px 0;
+      }
+
+      .profile-img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+      }
+
+      .nav-buttons {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- En-tête -->
+  <div class="header">
+    <a href="https://pigier-benin.com/" target="_blank">
+      <img src="pigier.webp" alt="Logo Pigier">
+    </a>
+
+    <div class="welcome-block">
+      <h2>Bienvenue sur mon site web</h2> 
+       <a href="#informations-personnelles" class="name link">OLORY-TOGBE Brunel
+       </a>
+     
+    </div>
+
+    <a href="https://justice.gouv.bj/" target="_blank">
+      <img src="photo ministère.webp" alt="Logo Ministère">
+    </a>
+  </div>
+
+  <!-- Informations personnelles -->
+  <div class="card" id="informations-personnelles">
+    <h1>Informations personnelles</h1>
+    <p><strong>Nom :</strong> OLORY-TOGBE</p>
+    <p><strong>Prénom :</strong> Brunel</p>
+    <p><strong>Sexe :</strong> Masculin</p>
+    <p><strong>Filière :</strong> Réseaux et Sécurité Informatique</p>
+    <p><strong>Email :</strong> brunelolory12@gmail.com</p>
+    <img src="brunel.jpg" alt="Photo de Brunel" class="profile-img">
+  </div>
+
+  <div class="card">
+    <h1>Mes formations</h1>
+    <ol>
+      <li>CEP</li>
+      <li>BEPC</li>
+      <li>BAC</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h1>Mes loisirs</h1>
+    <ol>
+      <li>Dormir</li>
+      <li>Manger</li>
+      <li>Musique</li>
+      <li>Sport</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h1>Ma situation professionnelle</h1>
+    <p>
+      Je m’appelle <strong>Olory Brunel</strong>, étudiant en Réseaux et Sécurité Informatique à Pigier Bénin. 
+      Je vis actuellement à Cotonou, dans un quartier calme propice aux études. Mes journées sont partagées 
+      entre les cours, les travaux pratiques et la veille technologique. Je m’intéresse particulièrement 
+      à la cybersécurité et au cloud computing. En dehors de mes études, j’aime lire des articles sur les 
+      innovations numériques et apprendre de nouveaux langages de programmation. Mon objectif est de devenir 
+      <strong>ingénieur en sécurité informatique</strong> reconnu dans mon domaine.
+    </p>
+  </div>
+
+  <div class="nav-buttons">
+    <a href="page2.html" class="nav-button">← Précédent</a>
+    <a href="page4.html" class="nav-button">Suivant →</a>
+  </div>
+</body>
+</html>
